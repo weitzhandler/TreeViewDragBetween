@@ -5,5 +5,11 @@
       xmlns:utu="using:Uno.Toolkit.UI"
       Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-  <TreeView x:Name="treeView" />
+  <TreeView ItemsSource="{x:Bind Items}">
+    <TreeView.ItemTemplate>
+      <DataTemplate>
+        <TreeViewItem Content="{Binding Number}" ItemsSource="{Binding Children}" />
+      </DataTemplate>
+    </TreeView.ItemTemplate>
+  </TreeView>
 </Page>

@@ -47,6 +47,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="ListViewItem.xaml" />
     <None Remove="TreeView.xaml" />
   </ItemGroup>
 
@@ -56,6 +57,16 @@
 
   <ItemGroup>
     <Page Update="TreeView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="ListViewItem.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="ListViewItem.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
