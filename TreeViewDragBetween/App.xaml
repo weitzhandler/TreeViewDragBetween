@@ -14,8 +14,10 @@
         <!-- Load Uno.UI.Toolkit resources -->
         <ToolkitResources xmlns="using:Uno.Toolkit.UI" />
 
-        <ResourceDictionary Source="ListViewItem.xaml" />
+        <ResourceDictionary Source="ListViewItemTheme.xaml" />
+        <ResourceDictionary Source="TreeViewTheme.xaml" />
         <ResourceDictionary Source="TreeView.xaml" />
+        <ResourceDictionary Source="TreeViewItem.xaml" />
       </ResourceDictionary.MergedDictionaries>
     </ResourceDictionary>
   </Application.Resources>
