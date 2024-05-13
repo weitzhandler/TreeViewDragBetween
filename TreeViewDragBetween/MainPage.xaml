@@ -5,7 +5,12 @@
       xmlns:utu="using:Uno.Toolkit.UI"
       Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-  <TreeView ItemsSource="{x:Bind Items}">
+  <TreeView ItemsSource="{x:Bind Items}" DragOver="TreeView_DragOver">
+    <TreeView.ItemContainerStyle>
+      <Style TargetType="TreeViewItem" BasedOn="{StaticResource MUX_TreeViewItemStyle}">
+        <Setter Property="Margin" Value="0,20" />
+      </Style>
+    </TreeView.ItemContainerStyle>
     <TreeView.ItemTemplate>
       <DataTemplate>
         <TreeViewItem Content="{Binding Number}" ItemsSource="{Binding Children}" />

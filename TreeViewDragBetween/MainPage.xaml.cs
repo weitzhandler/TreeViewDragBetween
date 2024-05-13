@@ -38,6 +38,9 @@ public sealed partial class MainPage : Page
 
         ];
 
+    private void TreeView_DragOver(object sender, DragEventArgs e)
+    {
+    }
 }
 
 public class Node(int number, IList<Node> children)
